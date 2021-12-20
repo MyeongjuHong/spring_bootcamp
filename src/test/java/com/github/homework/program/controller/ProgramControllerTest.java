@@ -107,7 +107,7 @@ public class ProgramControllerTest extends BaseControllerTest {
                 .andExpect(status().isBadRequest())
                 .andExpect(jsonPath("[0].field").value("name"))
                 .andExpect(jsonPath("[0].objectName").value("programSaveDto"))
-                .andExpect(jsonPath("[밋0].code").value("NotBlank"))
+                .andExpect(jsonPath("[0].code").value("NotBlank"))
                 .andExpect(jsonPath("[0].defaultMessage").value("must not be blank"));
 
     }
